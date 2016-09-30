@@ -43,7 +43,7 @@
             this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
             this.SalesBonusLabel = new System.Windows.Forms.Label();
             this.PrintButton = new System.Windows.Forms.Button();
-            this.CalculateButton = new System.Windows.Forms.Button();
+            this.CalculateBMIButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.SelectLanguageGroupBox = new System.Windows.Forms.GroupBox();
@@ -157,7 +157,6 @@
             this.TotalMonthlySalesLabel.TabIndex = 6;
             this.TotalMonthlySalesLabel.Text = "Total Monthly Sales";
             this.TotalMonthlySalesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.TotalMonthlySalesLabel.Click += new System.EventHandler(this.HoursWorkedLabel_Click);
             // 
             // TotalMonthlySalesTextBox
             // 
@@ -197,15 +196,15 @@
             this.PrintButton.UseVisualStyleBackColor = true;
             this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
-            // CalculateButton
+            // CalculateBMIButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(31, 444);
-            this.CalculateButton.Name = "CalculateButton";
-            this.CalculateButton.Size = new System.Drawing.Size(92, 37);
-            this.CalculateButton.TabIndex = 8;
-            this.CalculateButton.Text = "Calculate";
-            this.CalculateButton.UseVisualStyleBackColor = true;
-            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
+            this.CalculateBMIButton.Location = new System.Drawing.Point(31, 444);
+            this.CalculateBMIButton.Name = "CalculateBMIButton";
+            this.CalculateBMIButton.Size = new System.Drawing.Size(92, 37);
+            this.CalculateBMIButton.TabIndex = 8;
+            this.CalculateBMIButton.Text = "Calculate";
+            this.CalculateBMIButton.UseVisualStyleBackColor = true;
+            this.CalculateBMIButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // ClearButton
             // 
@@ -282,7 +281,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(482, 513);
             this.Controls.Add(this.SelectLanguageGroupBox);
-            this.Controls.Add(this.CalculateButton);
+            this.Controls.Add(this.CalculateBMIButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.PrintButton);
@@ -329,7 +328,7 @@
         private System.Windows.Forms.TextBox SalesBonusTextBox;
         private System.Windows.Forms.Label SalesBonusLabel;
         private System.Windows.Forms.Button PrintButton;
-        private System.Windows.Forms.Button CalculateButton;
+        private System.Windows.Forms.Button CalculateBMIButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.GroupBox SelectLanguageGroupBox;

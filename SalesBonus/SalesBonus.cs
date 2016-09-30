@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+Sharp Mail Order - SALES BONUS
+Created by Gabriele Dibenedetto
+Date: September 30th, 2016
+
+This app calculates a bonus for each employee in the Company depending on sales.
+For each dollar made in a month, the Company awards 2% of sales to the employee.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,11 +27,9 @@ namespace SalesBonus
             InitializeComponent();
         }
 
-        private void HoursWorkedLabel_Click(object sender, EventArgs e)
-        {
+        // Language Methods. Each radio button will change this form's language
 
-        }
-
+        // Change to English (default)
         private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EnglishRadioButton.Text = "English";
@@ -36,12 +43,13 @@ namespace SalesBonus
             HoursWorkedLabel.Text = "Hours Worked";
             TotalMonthlySalesLabel.Text = "Total Monthly Sales";
             SalesBonusLabel.Text = "Sales Bonus";
-            CalculateButton.Text = "Calculate";
+            CalculateBMIButton.Text = "Calculate";
             PrintButton.Text = "Print";
             ClearButton.Text = "Clear";
             ExitButton.Text = "Exit";
         }
 
+        // Change to French
         private void FrenchRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EnglishRadioButton.Text = "Anglais";
@@ -55,12 +63,13 @@ namespace SalesBonus
             HoursWorkedLabel.Text = "Heures travaillées";
             TotalMonthlySalesLabel.Text = "Total des ventes mensuelles";
             SalesBonusLabel.Text = "Bonus des ventes";
-            CalculateButton.Text = "Calculer";
+            CalculateBMIButton.Text = "Calculer";
             PrintButton.Text = "Imprimer";
             ClearButton.Text = "Éclaircir";
             ExitButton.Text = "Sortir";
         }
 
+        // Change to Italian
         private void ItalianRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EnglishRadioButton.Text = "Inglese";
@@ -74,12 +83,13 @@ namespace SalesBonus
             HoursWorkedLabel.Text = "Ore lavorative";
             TotalMonthlySalesLabel.Text = "Totale vendite mensili";
             SalesBonusLabel.Text = "Bonus vendite";
-            CalculateButton.Text = "Calcola";
+            CalculateBMIButton.Text = "Calcola";
             PrintButton.Text = "Stampa";
             ClearButton.Text = "Azzera";
             ExitButton.Text = "Esci";
         }
 
+        // Change to German
         private void GermanRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EnglishRadioButton.Text = "Englisch";
@@ -93,12 +103,13 @@ namespace SalesBonus
             HoursWorkedLabel.Text = "Arbeitsstunden";
             TotalMonthlySalesLabel.Text = "Summe der monatlichen Verkäufe";
             SalesBonusLabel.Text = "Umsatzprämie";
-            CalculateButton.Text = "Berechnen";
+            CalculateBMIButton.Text = "Berechnen";
             PrintButton.Text = "Drucken";
             ClearButton.Text = "Zurückstellen";
             ExitButton.Text = "Verlassen";
         }
 
+        // Change to Spanish
         private void SpanishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EnglishRadioButton.Text = "Inglés";
@@ -112,17 +123,19 @@ namespace SalesBonus
             HoursWorkedLabel.Text = "Horas trabajadas";
             TotalMonthlySalesLabel.Text = "Ventas totales mensuales";
             SalesBonusLabel.Text = "Bono ventas";
-            CalculateButton.Text = "Calcular";
+            CalculateBMIButton.Text = "Calcular";
             PrintButton.Text = "Imprimir";
             ClearButton.Text = "Reajustar";
             ExitButton.Text = "Salir";
         }
 
+        // Calculate Button
         private void CalculateButton_Click(object sender, EventArgs e)
         {
             CalculateTotal();
         }
         
+        // Calculate Method
         private void CalculateTotal()
         {
             double PercentageHoursWorked;
@@ -166,7 +179,8 @@ namespace SalesBonus
             }
             catch (Exception)
             {
-                if(EnglishRadioButton.Checked == true)
+                // Error message in different languages
+                if (EnglishRadioButton.Checked == true)
                 {
                     MessageBox.Show("Please insert numeric values between 1 and 160.", "Input Error");
                     HoursWorkedTextBox.Focus(); // keep staying on the same form after error message

@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MailOrder.resx">
+      <DependentUpon>MailOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrintMessage.resx">
       <DependentUpon>PrintMessage.cs</DependentUpon>
     </EmbeddedResource>
