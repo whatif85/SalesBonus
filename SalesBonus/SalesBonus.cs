@@ -166,11 +166,37 @@ namespace SalesBonus
             }
             catch (Exception)
             {
-                MessageBox.Show("Please insert numeric values between 1 and 160", "Input Error");
-                HoursWorkedTextBox.Focus(); // keep staying on the same form after error message
-                HoursWorkedTextBox.SelectAll();
-            }
-            
+                if(EnglishRadioButton.Checked == true)
+                {
+                    MessageBox.Show("Please insert numeric values between 1 and 160.", "Input Error");
+                    HoursWorkedTextBox.Focus(); // keep staying on the same form after error message
+                    HoursWorkedTextBox.SelectAll();
+                }
+                else if(FrenchRadioButton.Checked == true)
+                {
+                    MessageBox.Show("S'il vous plaît insérer des valeurs numériques entre 1 et 160.", "Erreur d'entrée");
+                    HoursWorkedTextBox.Focus();
+                    HoursWorkedTextBox.SelectAll();
+                }
+                else if (ItalianRadioButton.Checked == true)
+                {
+                    MessageBox.Show("Assicurarsi di inserire valori numerici tra 1 e 160.", "Errore Input");
+                    HoursWorkedTextBox.Focus();
+                    HoursWorkedTextBox.SelectAll();
+                }
+                else if (GermanRadioButton.Checked == true)
+                {
+                    MessageBox.Show("Bitte geben Sie numerische Werte zwischen 1 und 160.", "Eingabe Fehler");
+                    HoursWorkedTextBox.Focus();
+                    HoursWorkedTextBox.SelectAll();
+                }
+                else if (SpanishRadioButton.Checked == true)
+                {
+                    MessageBox.Show("Por favor, introduzca los valores numéricos entre 1 y 160.", "Error de input");
+                    HoursWorkedTextBox.Focus();
+                    HoursWorkedTextBox.SelectAll();
+                }
+            }            
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

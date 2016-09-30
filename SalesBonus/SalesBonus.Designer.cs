@@ -103,7 +103,7 @@
             // 
             // EmployeeNameTextBox
             // 
-            this.EmployeeNameTextBox.Location = new System.Drawing.Point(216, 239);
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(204, 237);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(252, 22);
             this.EmployeeNameTextBox.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             // EmployeeIDTextBox
             // 
-            this.EmployeeIDTextBox.Location = new System.Drawing.Point(216, 267);
+            this.EmployeeIDTextBox.Location = new System.Drawing.Point(204, 267);
             this.EmployeeIDTextBox.Name = "EmployeeIDTextBox";
             this.EmployeeIDTextBox.Size = new System.Drawing.Size(252, 22);
             this.EmployeeIDTextBox.TabIndex = 5;
@@ -141,7 +141,7 @@
             // 
             // HoursWorkedTextBox
             // 
-            this.HoursWorkedTextBox.Location = new System.Drawing.Point(216, 309);
+            this.HoursWorkedTextBox.Location = new System.Drawing.Point(204, 309);
             this.HoursWorkedTextBox.Name = "HoursWorkedTextBox";
             this.HoursWorkedTextBox.Size = new System.Drawing.Size(252, 22);
             this.HoursWorkedTextBox.TabIndex = 6;
@@ -161,7 +161,7 @@
             // 
             // TotalMonthlySalesTextBox
             // 
-            this.TotalMonthlySalesTextBox.Location = new System.Drawing.Point(216, 337);
+            this.TotalMonthlySalesTextBox.Location = new System.Drawing.Point(204, 337);
             this.TotalMonthlySalesTextBox.Name = "TotalMonthlySalesTextBox";
             this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(252, 22);
             this.TotalMonthlySalesTextBox.TabIndex = 7;
@@ -169,7 +169,7 @@
             // 
             // SalesBonusTextBox
             // 
-            this.SalesBonusTextBox.Location = new System.Drawing.Point(216, 365);
+            this.SalesBonusTextBox.Location = new System.Drawing.Point(204, 365);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
             this.SalesBonusTextBox.Size = new System.Drawing.Size(252, 22);
@@ -189,7 +189,7 @@
             // 
             // PrintButton
             // 
-            this.PrintButton.Location = new System.Drawing.Point(145, 444);
+            this.PrintButton.Location = new System.Drawing.Point(141, 444);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(92, 37);
             this.PrintButton.TabIndex = 9;
@@ -199,7 +199,7 @@
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(38, 444);
+            this.CalculateButton.Location = new System.Drawing.Point(31, 444);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(92, 37);
             this.CalculateButton.TabIndex = 8;
@@ -280,7 +280,7 @@
             // SalesBonusForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(480, 517);
+            this.ClientSize = new System.Drawing.Size(482, 513);
             this.Controls.Add(this.SelectLanguageGroupBox);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.ExitButton);

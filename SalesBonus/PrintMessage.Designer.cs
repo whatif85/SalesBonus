@@ -41,6 +41,7 @@
             this.PrintMessageLabel.Size = new System.Drawing.Size(338, 25);
             this.PrintMessageLabel.TabIndex = 0;
             this.PrintMessageLabel.Text = "Your Form Is Being Sent to the Printer";
+            this.PrintMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OKPrintButton
             // 
