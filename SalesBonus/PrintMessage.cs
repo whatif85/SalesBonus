@@ -11,7 +11,7 @@ namespace SalesBonus
         // declare a property that has the shape of the previous form
         public SalesBonusForm previousForm { get; set; }
 
-        /* BETA: Languages imported from SalesBonus.cs
+        /* BETA: Languages imported from MailOrder.cs
         public object EnglishRadioButton { get; private set; }
         public object FrenchRadioButton { get; private set; }
         public object ItalianRadioButton { get; private set; }
